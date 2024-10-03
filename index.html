@@ -4,52 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendita</title>
-    <link rel="icon" type="image/x-icon" href="/img/tiktok2.jpg">
-    <link rel="stylesheet" href="./style.css">
+    <title>Mini Tienda de Ropa</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
+    <header>
+        <h1>Mini Tienda de Ropa</h1>
+    </header>
 
-
-    <h1>Tienda de Ropa</h1>
-    
-    <!-- Productos -->
-    <div class="products">
-        <div class="product" id="product1">
-            <img src="./img/camisa.jpg" alt="Producto 1">
-            <h2>Camisa Azul</h2>
-            <p>$25.00</p>
-            <button class="add-to-cart" data-id="1" data-name="Camisa Azul" data-price="25.00">Agregar al carrito</button>
-            <button class="remove-from-cart" data-id="1">Quitar del carrito</button>
-        </div>
-        <div class="product" id="product2">
-            <img src="./img/pantalon.jpg" alt="Producto 2">
-            <h2>Pantalón Negro</h2>
-            <p>$40.00</p>
-            <button class="add-to-cart" data-id="2" data-name="Pantalón Negro" data-price="40.00">Agregar al carrito</button>
-            <button class="remove-from-cart" data-id="2">Quitar del carrito</button>
-        </div>
-        <div class="product" id="product3">
-            <img src="./img/zapatillas.jpg" alt="Producto 3">
-            <h2>Zapatos Deportivos</h2>
-            <p>$60.00</p>
-            <button class="add-to-cart" data-id="3" data-name="Zapatos Deportivos" data-price="60.00">Agregar al carrito</button>
-            <button class="remove-from-cart" data-id="3">Quitar del carrito</button>
-        </div>
-    </div>
+    <!-- Contenedor de productos -->
+    <section id="productContainer" class="products"></section>
 
     <!-- Carrito -->
-    <div class="cart">
+    <aside class="cart">
         <h2>Carrito de Compras</h2>
         <ul id="cartItems"></ul>
         <p id="totalPrice">Total: $0.00</p>
-    </div>
+        <button id="emptyCart">Vaciar Carrito</button>
 
+    </aside>
 
-    <!-- SCRIPT  -->
-    <script src="./main.js"> </script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
