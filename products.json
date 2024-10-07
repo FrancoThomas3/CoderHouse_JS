@@ -3,18 +3,18 @@
         "id": 1,
         "name": "Camisa Azul",
         "price": 25.00,
-        "image": "img/camisa.jpg"
+        "image": "./img/camisa.jpg"
     },
     {
         "id": 2,
         "name": "Pantalón Negro",
         "price": 40.00,
-        "image": "img/pantalon.jpg"
+        "image": "./img/pantalon.jpg"
     },
     {
         "id": 3,
         "name": "Zapatos Deportivos",
         "price": 60.00,
-        "image": "img/zapatillas.jpg"
+        "image": "./img/zapatillas.jpg"
     }
 ]
